@@ -90,7 +90,7 @@ export class PipelineStack extends core.Stack {
             buildSpecLocation: '_codebuild/deploy.uat1.yml',
             codebuildRole: codebuildRole,
             notificationsTopic: notificationTopic,
-            hasManualApproval: false
+            hasManualApproval: true
         }
 
         // Deploy to UAT2
@@ -103,7 +103,7 @@ export class PipelineStack extends core.Stack {
             buildSpecLocation: '_codebuild/deploy.uat2.yml',
             codebuildRole: codebuildRole,
             notificationsTopic: notificationTopic,
-            hasManualApproval: false
+            hasManualApproval: true
         }
 
         const stageDeployToUatStages = stageFactory.createParallelRun(
