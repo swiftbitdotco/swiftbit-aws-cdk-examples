@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install
+  pre_build:
+    commands:
+      - ls
+      #- npm run test-once-with-coverage
+  build:
+    commands:
+      - npm run build-dev
+artifacts:
+  files:
+    - dist_dev/**/*
+    #- coverage/**/*

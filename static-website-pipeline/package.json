@@ -1,0 +1,29 @@
+{
+    "name": "static-website-pipeline",
+    "version": "0.2.0",
+    "bin": {
+        "pipeline": "bin/pipeline.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc -w",
+        "cdk": "cdk"
+    },
+    "devDependencies": {
+        "@types/node": "12.7.5",
+        "typescript": "3.6.3",
+        "ts-node": "8.4.1",
+        "aws-cdk": "1.8.0"
+    },
+    "dependencies": {
+        "@aws-cdk/aws-codebuild": "1.8.0",
+        "@aws-cdk/aws-codecommit": "1.8.0",
+        "@aws-cdk/aws-codedeploy": "1.8.0",
+        "@aws-cdk/aws-codepipeline": "1.8.0",
+        "@aws-cdk/aws-codepipeline-actions": "1.8.0",
+        "@aws-cdk/aws-iam": "1.8.0",
+        "@aws-cdk/core": "1.8.0",
+        "@mobileposse/auto-delete-bucket": "1.6.1",
+        "change-case": "3.1.0"
+    }
+}
